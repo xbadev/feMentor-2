@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: 1fr 1fr;
+      gap: 25px;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    header {
+      background: #219ebc;
+      grid-column: 1 / span 3;
+    }
+
+    nav {
+      background: #8ecae6;
+    }
+
+    main {
+      background: #ffb703;
+      grid-row: span 2;
+    }
+
+    aside {
+      background: #fb8500;
+    }
+
+    span {
+      color: white;
+      background: black;
+      grid-column: 2 / span 3;
+    }
+
+    header,
+    nav,
+    main,
+    aside,
+    span {
+      padding: 20px;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <header>Head</header>
+    <nav>Nav</nav>
+    <main>Main Content</main>
+    <aside>Ad</aside>
+    <span>Div</span>
+  </div>
+</body>
+
+</html>
