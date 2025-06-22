@@ -11,35 +11,41 @@
 
     .layout {
       display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      grid-template-rows: 1fr 1fr;
-      gap: 25px;
-      padding: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: auto;
+      max-width: 1500px; width: 100%;
+      margin-inline: auto;
+      gap: 30px;
+      padding: 50px;
       height: 100vh;
     }
 
     header {
       background: #219ebc;
-      grid-column: 1 / span 3;
+      grid-column: 1 / span 2;
     }
 
     nav {
       background: #8ecae6;
+      grid-column: 3;
     }
 
     main {
       background: #ffb703;
-      grid-row: span 2;
+      grid-column: 4;
+      grid-row: 1/ span 2;
     }
 
     aside {
       background: #fb8500;
+      grid-column: 1;
+      grid-row: 2;
     }
 
     span {
       color: white;
       background: black;
-      grid-column: 2 / span 3;
+      grid-column: 2 / span 2;
     }
 
     header,
